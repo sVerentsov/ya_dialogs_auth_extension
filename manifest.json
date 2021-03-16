@@ -1,0 +1,16 @@
+{
+    "name": "Yandex Dialogs Auth redirect",
+    "description": "This extension changes link to Yandex Passport on https://dialogs.yandex.ru/developer such that it will redirect you back after authorization",
+    "version": "0.1",
+    "manifest_version": 2,
+    "content_scripts": [
+        {
+            "js": [
+                "update_link.js"
+            ],
+            "matches": [
+                "https://dialogs.yandex.ru/*"
+            ]
+        }
+    ]
+}
